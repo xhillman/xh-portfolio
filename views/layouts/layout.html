@@ -23,32 +23,32 @@
       <nav class="sidebar">
         <div class="xh-info-container">
           <div class="xh-headshot"></div>
-          <div class="xh-info">
+          <div id="xh-info">
             <h1 class="text-xl">@xavierhillman</h1>
             <h2>Software Developer</h2>
             <h3>Massachusetts, USA</h3>
           </div>
         </div>
         <ul class="sidebar-menu">
-          <li class="menu-item active-menu-item">
-            <a hx-get="/" hx-target="#content" hx-push-url="true">Home</a>
+          <li class="menu-item" id="home-link">
+            <a class="menu-item-link" hx-get="/" hx-target="#content" hx-swap="innerHTML transition:true" hx-push-url="true">Home</a>
           </li>
-          <li class="menu-item">
-            <a hx-get="/blog" hx-target="#content" hx-push-url="true">Blog</a>
+          <li class="menu-item" id="blog-link">
+            <a class="menu-item-link" hx-get="/blog" hx-target="#content" hx-swap="innerHTML transition:true" hx-push-url="true">Blog</a>
           </li>
-          <li class="menu-item">
-            <a hx-get="/projects" hx-target="#content" hx-push-url="true"
+          <li class="menu-item" id="projects-link">
+            <a  class="menu-item-link" hx-get="/projects" hx-target="#content" hx-swap="innerHTML transition:true" hx-push-url="true"
               >Projects</a
             >
           </li>
-          <li class="menu-item">
-            <a hx-get="/about" hx-target="#content" hx-push-url="true">About</a>
+          <li class="menu-item" id="about-link">
+            <a class="menu-item-link" hx-get="/about" hx-target="#content" hx-swap="innerHTML transition:true" hx-push-url="true">About</a>
           </li>
         </ul>
         <div class="site-controls">controls</div>
       </nav>
       <main>
-        <div id="content">
+        <div id="content" class="content-swap">
           {{ block "main-content" .}}
           <h1>The Layout Page</h1>
           {{end}}
