@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="root-container">
@@ -21,30 +21,30 @@
         <div class="xh-info-container">
           <div class="xh-headshot"></div>
           <div id="xh-info">
-            <h1 class="text-xl">@xavierhillman</h1>
+            <h1 class="text-xl">Xavier Hillman</h1>
             <h2>Software Developer</h2>
             <h3>Massachusetts, USA</h3>
           </div>
         </div>
         <ul class="sidebar-menu">
           <li class="menu-item" id="home-link">
-            <a class="menu-item-link" hx-get="/" hx-target="#content" hx-swap="innerHTML transition:true" hx-push-url="true">Home</a>
+            <a class="menu-item-link" hx-get="/" hx-target="#content" hx-swap="innerHTML transition:true show:#main:top" hx-push-url="true">Home</a>
           </li>
           <li class="menu-item" id="blog-link">
-            <a class="menu-item-link" hx-get="/blog" hx-target="#content" hx-swap="innerHTML transition:true" hx-push-url="true">Blog</a>
+            <a class="menu-item-link" hx-get="/blog" hx-target="#content" hx-swap="innerHTML transition:true show:#main:top" hx-push-url="true">Blog</a>
           </li>
           <li class="menu-item" id="projects-link">
-            <a  class="menu-item-link" hx-get="/projects" hx-target="#content" hx-swap="innerHTML transition:true" hx-push-url="true"
+            <a  class="menu-item-link" hx-get="/projects" hx-target="#content" hx-swap="innerHTML transition:true show:#main:top" hx-push-url="true"
               >Projects</a
             >
           </li>
           <li class="menu-item" id="about-link">
-            <a class="menu-item-link" hx-get="/about" hx-target="#content" hx-swap="innerHTML transition:true" hx-push-url="true">About</a>
+            <a class="menu-item-link" hx-get="/about" hx-target="#content" hx-swap="innerHTML transition:true show:#main:top" hx-push-url="true">About</a>
           </li>
         </ul>
         <div class="site-controls">controls</div>
       </nav>
-      <main>
+      <main id="main">
         <div id="content" class="content-swap">
           {{ block "main-content" .}}
           <h1>The Layout Page</h1>

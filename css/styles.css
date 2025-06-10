@@ -17,7 +17,7 @@ body {
   margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Poppins'
 }
 
@@ -45,7 +45,8 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-width: 200px;
+  min-width: fit-content;
+  padding: 0 10px;
 }
 
 .sidebar-menu {
@@ -60,27 +61,44 @@ p {
 .xh-info-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 10px;
+  justify-content: space-around;
+  padding: 20px 0;
 }
 
 .xh-headshot {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   background-color: red;
   border-radius: 50px;
 }
 
-.xh-info {
-  margin: 10px;
+#xh-info {
+  margin: 0 10px;
+}
+
+#xh-info * {
+  margin-bottom: 5px;
+}
+
+#xh-info h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#xh-info h2 {
+  font-size: .9rem;
+}
+
+#xh-info h3 {
+  font-size: .8rem;
+  font-style: italic;
 }
 
 .menu-item {
   color: rgba(255, 255, 255, 0.5);
   margin: 10px 0;
   /* text-align: center; */
-  width: 80%;
+  width: 100%;
   border-radius: 5px;
   cursor: pointer;
   transition: ease .3s;
@@ -155,6 +173,10 @@ main {
 
 .home h1 {
   font-size: 3rem;
+}
+
+.about {
+  padding: 100px 0;
 }
 
 .about h1 {
