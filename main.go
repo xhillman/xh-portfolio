@@ -9,14 +9,14 @@ import (
 func main() {
 
 	homeHandler := func(w http.ResponseWriter, r *http.Request) {
-		templ, err := template.ParseFiles("views/layouts/layout.html", "views/pages/home.html")
+		templ, err := template.ParseFiles("html/layouts/layout.html", "html/pages/home.html")
 		if err != nil {
 			log.Fatal(err)
 		}
 
 		hxRequest := r.Header.Get("Hx-Request")
 		if hxRequest == "true" {
-			templ, err := template.ParseFiles("views/pages/home.html")
+			templ, err := template.ParseFiles("html/pages/home.html")
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -27,13 +27,13 @@ func main() {
 	}
 
 	blogHandler := func(w http.ResponseWriter, r *http.Request) {
-		templ, err := template.ParseFiles("views/layouts/layout.html", "views/pages/blog.html")
+		templ, err := template.ParseFiles("html/layouts/layout.html", "html/pages/blog.html")
 		if err != nil {
 			log.Fatal(err)
 		}
 		hxRequest := r.Header.Get("Hx-Request")
 		if hxRequest == "true" {
-			templ, err := template.ParseFiles("views/pages/blog.html")
+			templ, err := template.ParseFiles("html/pages/blog.html")
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -44,13 +44,13 @@ func main() {
 	}
 
 	projectsHandler := func(w http.ResponseWriter, r *http.Request) {
-		templ, err := template.ParseFiles("views/layouts/layout.html", "views/pages/projects.html")
+		templ, err := template.ParseFiles("html/layouts/layout.html", "html/pages/projects.html")
 		if err != nil {
 			log.Fatal(err)
 		}
 		hxRequest := r.Header.Get("Hx-Request")
 		if hxRequest == "true" {
-			templ, err := template.ParseFiles("views/pages/projects.html")
+			templ, err := template.ParseFiles("html/pages/projects.html")
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -61,13 +61,13 @@ func main() {
 	}
 
 	aboutHandler := func(w http.ResponseWriter, r *http.Request) {
-		templ, err := template.ParseFiles("views/layouts/layout.html", "views/pages/about.html")
+		templ, err := template.ParseFiles("html/layouts/layout.html", "html/pages/about.html")
 		if err != nil {
 			log.Fatal(err)
 		}
 		hxRequest := r.Header.Get("Hx-Request")
 		if hxRequest == "true" {
-			templ, err := template.ParseFiles("views/pages/about.html")
+			templ, err := template.ParseFiles("html/pages/about.html")
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -78,7 +78,6 @@ func main() {
 	}
 
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
-
 	http.Handle("/js/", http.StripPrefix("/js/", http.FileServer(http.Dir("js"))))
 
 	http.HandleFunc("/", homeHandler)
