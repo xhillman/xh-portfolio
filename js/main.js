@@ -31,19 +31,9 @@ const activateCurrentMenuLink = () => {
   menuItem.classList.add('active-menu-item')
 }
 
-// const shadeText = () => {
-//   const content = document.getElementById("content").firstChild()
-//   content.classList.remove("content-hidden")
-//   content.classList.add("content-visible")
-// }
-
-
-
-
 const setup = () => {
   activateCurrentMenuLink()
   setMenuAnimations()
-  // shadeText()
 }
 
 window.onload = setup()

@@ -37,7 +37,7 @@ p {
 
 .sidebar {
   height: 100%;
-  background-color: #101010;
+  background-color: #090909;
   position: sticky;
   top: 0;
   left: 0;
@@ -78,13 +78,14 @@ p {
 
 .menu-item {
   color: rgba(255, 255, 255, 0.5);
-  margin: 5px;
+  margin: 10px 0;
   /* text-align: center; */
   width: 80%;
   border-radius: 5px;
   cursor: pointer;
   transition: ease .3s;
   font-family: "Poppins";
+  font-weight: 400;
 }
 
 .menu-item-link {
@@ -96,16 +97,18 @@ p {
 .menu-item:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #efefef;
-  font-size: 1.1rem;
-  font-weight: bold;
+  /* font-size: 1.1rem; */
+  font-weight: 500;
+  transition: ease .3s;
+
 }
 
 .active-menu-item {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   color: #101010;
-  font-size: 1.1rem;
-  font-weight: bold;
+  /* font-size: 1.1rem; */
+  font-weight: 500;
 }
 
 .active-menu-item.menu-item {
@@ -143,13 +146,28 @@ main {
 }
 
 ::view-transition-old(content-swap) {
-  animation: 1s ease fade-out;
+  animation: .5s ease fade-out;
 }
 
 ::view-transition-new(content-swap) {
-  animation: 1s ease fade-in;
+  animation: .5s ease fade-in;
 }
 
+.home h1 {
+  font-size: 3rem;
+}
+
+.about h1 {
+  font-size: 2rem;
+}
+
+.projects h1 {
+  font-size: 2.5rem;
+}
+
+.blog h1 {
+  font-size: 4rem;
+}
 
 /* socials */
 
