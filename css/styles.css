@@ -1,3 +1,5 @@
+@import "/css/reset.css";
+
 :root {
   view-transition-name: none;
 }
@@ -17,7 +19,9 @@ body {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Poppins'
 }
 
@@ -139,15 +143,20 @@ main {
   width: 100%;
 }
 
-#content {
+#content-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px;
 }
 
-#content > * {
+#content-container>* {
   max-width: 900px;
+  margin-top: 90px;
+}
+
+.content h2 {
+  font-size: 2rem;
 }
 
 ::view-transition {
@@ -155,11 +164,27 @@ main {
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
+  from {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-out {
-  to { opacity: 0; }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-from-top {
+  from {
+    transform: translateY(-200px);
+  }
+}
+
+@keyframes slide-to-bottom {
+  to {
+    transform: translateY(200px);
+  }
 }
 
 .content-swap {
@@ -167,32 +192,15 @@ main {
 }
 
 ::view-transition-old(content-swap) {
-  animation: .5s ease fade-out;
+  animation: .4s ease fade-out,
+     .3s ease slide-to-bottom;
 }
 
 ::view-transition-new(content-swap) {
-  animation: .5s ease fade-in;
+  animation: .4s ease fade-in,
+     .3s ease slide-from-top;
 }
 
-.home h1 {
-  font-size: 3rem;
-}
-
-.about {
-  padding: 100px 0;
-}
-
-.about h1 {
-  font-size: 2rem;
-}
-
-.projects h1 {
-  font-size: 2.5rem;
-}
-
-.blog h1 {
-  font-size: 4rem;
-}
 
 /* socials */
 

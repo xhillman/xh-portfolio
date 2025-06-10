@@ -8,7 +8,6 @@
   <script src="https://unpkg.com/htmx.org@2.0.4"
     integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/css/reset.css" />
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +23,7 @@
         <div class="xh-info-container">
           <div class="xh-headshot"></div>
           <div id="xh-info">
-            <h1 class="text-xl">Xavier Hillman</h1>
+            <h1>Xavier Hillman</h1>
             <h2>Software Developer</h2>
             <h3>Massachusetts, USA</h3>
           </div>
@@ -32,19 +31,19 @@
 
         <ul class="sidebar-menu">
           <li class="menu-item" id="home-link">
-            <a class="menu-item-link" hx-get="/" hx-target="#content" hx-swap="innerHTML transition:true show:#main:top"
+            <a class="menu-item-link" hx-get="/" hx-target="#content-container" hx-swap="innerHTML transition:true show:#main:top"
               hx-push-url="true">home</a>
           </li>
           <li class="menu-item" id="blog-link">
-            <a class="menu-item-link" hx-get="/blog" hx-target="#content"
+            <a class="menu-item-link" hx-get="/blog" hx-target="#content-container"
               hx-swap="innerHTML transition:true show:#main:top" hx-push-url="true">blog</a>
           </li>
           <li class="menu-item" id="projects-link">
-            <a class="menu-item-link" hx-get="/projects" hx-target="#content"
+            <a class="menu-item-link" hx-get="/projects" hx-target="#content-container"
               hx-swap="innerHTML transition:true show:#main:top" hx-push-url="true">projects</a>
           </li>
           <li class="menu-item" id="about-link">
-            <a class="menu-item-link" hx-get="/about" hx-target="#content"
+            <a class="menu-item-link" hx-get="/about" hx-target="#content-container"
               hx-swap="innerHTML transition:true show:#main:top" hx-push-url="true">about</a>
           </li>
         </ul>
@@ -61,7 +60,7 @@
     </nav>
 
     <main id="main">
-      <div id="content" class="content-swap">
+      <div id="content-container" class="content-swap">
         {{ block "main-content" .}}
         <h1>The Layout Page</h1>
         {{end}}
