@@ -1,4 +1,6 @@
-/* @import "reset.css"; */
+:root {
+  view-transition-name: none;
+}
 
 html {
   height: 100vh;
@@ -44,10 +46,6 @@ p {
   align-items: center;
   justify-content: space-between;
   min-width: 200px;
-}
-
-.sidebar > * {
-  /* margin: 15px; */
 }
 
 .sidebar-menu {
@@ -128,6 +126,10 @@ main {
 
 }
 
+::view-transition {
+  pointer-events: none;
+}
+
 @keyframes fade-in {
   from { opacity: 0; }
 }
@@ -141,11 +143,11 @@ main {
 }
 
 ::view-transition-old(content-swap) {
-  animation: 1s ease both fade-out;
+  animation: 1s ease fade-out;
 }
 
 ::view-transition-new(content-swap) {
-  animation: 1s ease both fade-in;
+  animation: 1s ease fade-in;
 }
 
 
