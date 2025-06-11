@@ -18,22 +18,32 @@ const setMenuAnimations = () => {
 // set active page menu item
 const activateCurrentMenuLink = () => {
   let pagePath = window.location.pathname
-  console.log("raw", pagePath, typeof(pagePath))
   if (pagePath === "/") {
     pagePath = "home"
   } else {
-      pagePath = pagePath.split("").slice(1, pagePath.length).join("")
+    pagePath = pagePath.split("").slice(1, pagePath.length).join("")
   }
-
   const menuItem = document.getElementById(`${pagePath}-link`)
-
-  console.log("path", pagePath)
   menuItem.classList.add('active-menu-item')
+}
+
+// social link animation
+const setSocialAnimations = () => {
+  const links = document.getElementsByClassName("icon-tabler");
+  for (const link of links) {
+    link.addEventListener("mouseenter", function () {
+      this.attributes.stroke.value = "#efefef"
+    })
+    link.addEventListener("mouseleave", function () {
+      this.attributes.stroke.value = "#616161"
+    })
+  }
 }
 
 const setup = () => {
   activateCurrentMenuLink()
   setMenuAnimations()
+  setSocialAnimations()
 }
 
 window.onload = setup()
