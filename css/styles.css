@@ -73,7 +73,6 @@ p {
 .xh-headshot {
   width: 60px;
   height: 60px;
-  background-color: red;
   border-radius: 50px;
 }
 
@@ -110,17 +109,22 @@ p {
   transition: ease .3s;
   font-family: "Anonymous Pro";
   font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .menu-item-link {
   display: block;
-  width: 100%;
+  align-items: center;
+  max-width: 100%;
   padding: 10px 10px 10px 20px;
+}
+
+.menu-item-link > svg {
+  margin-right: 10px;
 }
 
 .menu-item:hover {
   background-color: #212121;
-  /* font-weight: 700; */
   transition: ease .3s;
 
 }
@@ -215,8 +219,4 @@ main {
   justify-content: space-evenly;
   width: 100%;
   padding: 20px 0;
-}
-
-.social-icons {
-  /* background-color: white; */
 }

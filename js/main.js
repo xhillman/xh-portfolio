@@ -33,9 +33,11 @@ const setSocialAnimations = () => {
   for (const link of links) {
     link.addEventListener("mouseenter", function () {
       this.attributes.stroke.value = "#efefef"
+      this.style.scale = "1.2"
     })
     link.addEventListener("mouseleave", function () {
       this.attributes.stroke.value = "#616161"
+      this.style.scale = "1"
     })
   }
 }
