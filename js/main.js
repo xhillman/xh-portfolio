@@ -27,7 +27,7 @@ const activateCurrentMenuLink = () => {
   menuItem.classList.add('active-menu-item')
 }
 
-// social link animation
+// social link hover animation
 const setSocialAnimations = () => {
   const links = document.getElementsByClassName("icon-tabler");
   for (const link of links) {
@@ -49,3 +49,4 @@ const setup = () => {
 }
 
 window.onload = setup()
+
