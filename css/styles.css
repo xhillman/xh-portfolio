@@ -120,7 +120,7 @@ p {
   padding: 10px 10px 10px 20px;
 }
 
-.menu-item-link > svg {
+.menu-item-link>svg {
   margin-right: 10px;
 }
 
@@ -238,7 +238,7 @@ main {
   display: flex;
   margin-top: 1rem;
   width: 100%;
-  height:max-content;
+  height: max-content;
   /* position: fixed;
   bottom: 0; */
 }
@@ -276,13 +276,15 @@ main {
 
 @keyframes slide-from-top {
   from {
-    transform: translateY(-200px);
+    transform-origin: center;
+    transform: translate(-50px, -50px);
   }
 }
 
 @keyframes slide-to-bottom {
   to {
-    transform: translateY(200px);
+    transform-origin: center;
+    transform: translate(50px, 50px);
   }
 }
 
@@ -291,13 +293,13 @@ main {
 }
 
 ::view-transition-old(content-swap) {
-  animation: .4s ease fade-out,
-    .3s ease slide-to-bottom;
+  animation: 300ms linear both fade-out,
+    500ms linear slide-to-bottom;
 }
 
 ::view-transition-new(content-swap) {
-  animation: .4s ease fade-in,
-    .3s ease slide-from-top;
+  animation: 500ms linear 90ms both fade-in,
+    600ms linear slide-from-top;
 }
 
 
