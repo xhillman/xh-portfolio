@@ -1,5 +1,4 @@
 function setProjectCardAnimations() {
-    console.log("loading project card animations...")
     const cards = document.getElementsByClassName("project-card");
     for (const card of cards) {
         card.addEventListener("mouseenter", function () {
@@ -15,7 +14,6 @@ function setProjectCardAnimations() {
             }
         })
     }
-    console.log("animations loaded!")
 }
 
 setProjectCardAnimations()
