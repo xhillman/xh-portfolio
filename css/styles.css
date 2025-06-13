@@ -51,7 +51,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  z-index: 1;
 }
 
 .sidebar-menu {
@@ -312,4 +312,10 @@ main {
   justify-content: space-evenly;
   width: 100%;
   padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
 }
