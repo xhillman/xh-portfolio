@@ -40,7 +40,7 @@ p {
 
 /* sidebar menu */
 
-.sidebar {
+#sidebar {
   height: 100%;
   background-color: #0f0f0f;
   position: sticky;
@@ -51,7 +51,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 9999;
+  
 }
 
 .sidebar-menu {
@@ -314,8 +315,27 @@ main {
   padding: 20px 0;
 }
 
+#hamburger-menu {
+  font-family: "Poppins";
+  font-size: 2rem;
+  display: none;
+  position: fixed;
+  text-align: end;
+  background-color: #0f0f0f;
+  width: 100%;
+  z-index: 1;
+}
+
+#close-menu {
+  visibility: hidden;
+}
+
 @media screen and (max-width: 768px) {
-  .sidebar {
+  #sidebar {
     display: none;
+    position: fixed;
+  }
+  #hamburger-menu {
+    display: block;
   }
 }

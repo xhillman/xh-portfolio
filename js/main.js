@@ -42,10 +42,31 @@ const setSocialAnimations = () => {
   }
 }
 
+const activateHamburgerMenu = () => {
+  const openBtn = document.getElementById("open-menu")
+  const closeBtn = document.getElementById("close-menu")
+  const sidebar = document.getElementById("sidebar")
+  console.log(sidebar)
+  openBtn.addEventListener("click", function () {
+    this.style.visibility = "hidden"
+    closeBtn.style.visibility = "visible"
+    sidebar.style.display = "flex"
+    
+  })
+  closeBtn.addEventListener("click", function () {
+    this.style.visibility = "hidden"
+    openBtn.style.visibility = "visible"
+
+
+    sidebar.style.display = "none"
+  })
+}
+
 const setup = () => {
   activateCurrentMenuLink()
   setMenuAnimations()
   setSocialAnimations()
+  activateHamburgerMenu()
 }
 
 window.onload = setup()

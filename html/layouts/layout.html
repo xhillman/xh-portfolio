@@ -21,7 +21,8 @@
 
 <body>
   <div class="root-container">
-    <nav class="sidebar">
+
+    <nav id="sidebar">
       <div id="sidebar-top">
         <div class="xh-info-container">
           <img class="xh-headshot" src="/media/xh_headshot.png" alt="Xavier Hillman headshot">
@@ -88,7 +89,10 @@
       </div>
 
     </nav>
-
+    <nav id="hamburger-menu">
+      <span id="close-menu">X</span>
+      <span id="open-menu">O</span>
+    </nav>
     <main id="main">
       <div id="content-container" class="content-swap">
         {{ block "main-content" .}}
