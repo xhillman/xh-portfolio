@@ -66,7 +66,7 @@ const setup = () => {
   activateCurrentMenuLink()
   setMenuAnimations()
   setSocialAnimations()
-  activateHamburgerMenu()
+  // activateHamburgerMenu()
 }
 
 window.onload = setup()

@@ -1,0 +1,138 @@
+#sidebar {
+  height: 100%;
+  background-color: #0f0f0f;
+  position: sticky;
+  top: 0;
+  left: 0;
+  min-width: fit-content;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  position: relative;
+}
+
+.xh-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0 0 0;
+  margin-bottom: 40px;
+}
+
+.xh-headshot {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+#xh-info {
+  margin: 0 10px;
+}
+
+#xh-info * {
+  margin-bottom: 5px;
+}
+
+#xh-info h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#xh-info h2 {
+  font-size: .9rem;
+  font-family: "Anonymous Pro";
+}
+
+#xh-info h3 {
+  font-size: .8rem;
+  font-family: "Anonymous Pro";
+  font-style: italic;
+}
+
+.menu-item {
+  color: #616161;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease .3s;
+  font-family: "Anonymous Pro";
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.menu-item-link {
+  display: block;
+  align-items: center;
+  max-width: 100%;
+  padding: 10px 10px 10px 20px;
+}
+
+.menu-item-link>svg {
+  margin-right: 10px;
+}
+
+.menu-item:hover {
+  background-color: #212121;
+  transition: ease .3s;
+
+}
+
+.active-menu-item {
+  background-color: #363636;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.active-menu-item.menu-item {
+  background-color: #3d3d3d;
+  color: #efefef;
+}
+
+.icon-tabler {
+  transition: ease .3s;
+}
+
+#socials {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* #hamburger-menu {
+  font-family: "Poppins";
+  font-size: 2rem;
+  display: none;
+  position: fixed;
+  text-align: end;
+  background-color: #0f0f0f;
+  width: 100%;
+  z-index: 1;
+}
+
+#close-menu {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  #sidebar {
+    display: none;
+    position: fixed;
+  }
+  #hamburger-menu {
+    display: block;
+  }
+} */

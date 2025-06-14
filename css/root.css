@@ -1,0 +1,44 @@
+:root {
+  view-transition-name: none;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  color: #efefef;
+  background-color: #090909;
+  overflow: hidden;
+  font-family: 'Anonymous Pro';
+  /* line-height: 2rem; */
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.root-container {
+  display: flex;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+main {
+  position: relative;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins';
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+

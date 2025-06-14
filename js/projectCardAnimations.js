@@ -16,4 +16,17 @@ function setProjectCardAnimations() {
     }
 }
 
-setProjectCardAnimations()
+// const cards = document.getElementsByClassName("project-card-overlay")
+// console.log(cards)
+// for (const card of cards) {
+//         card.addEventListener("mouseenter", function () {
+//         this.classList.add("active")
+//     })
+//     card.addEventListener("mouseleave", function () {
+//         console.log(this)
+//         this.classList.remove("active")
+//     })
+
+// }
+
+// setProjectCardAnimations()
