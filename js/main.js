@@ -32,11 +32,11 @@ const setSocialAnimations = () => {
   const links = document.getElementsByClassName("icon-tabler");
   for (const link of links) {
     link.addEventListener("mouseenter", function () {
-      this.attributes.stroke.value = "#efefef"
+      this.attributes.stroke.value = "var(--xh-white)"
       this.style.scale = "1.2"
     })
     link.addEventListener("mouseleave", function () {
-      this.attributes.stroke.value = "#616161"
+      this.attributes.stroke.value = "var(--xh-light-gray)"
       this.style.scale = "1"
     })
   }

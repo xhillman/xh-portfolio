@@ -1,6 +1,6 @@
 #sidebar {
   height: 100%;
-  background-color: #0f0f0f;
+  /* background-color: var(--xh-gray); */
   position: sticky;
   top: 0;
   left: 0;
@@ -60,7 +60,7 @@
 }
 
 .menu-item {
-  color: #616161;
+  color: var(--xh-light-gray);
   margin: 10px 0;
   width: 100%;
   border-radius: 5px;
@@ -83,20 +83,20 @@
 }
 
 .menu-item:hover {
-  background-color: #212121;
+  background-color: var(--xh-gray);
+  color: var(--xh-off-white);
   transition: ease .3s;
-
 }
 
 .active-menu-item {
-  background-color: #363636;
   border-radius: 5px;
   font-weight: 700;
 }
 
 .active-menu-item.menu-item {
-  background-color: #3d3d3d;
-  color: #efefef;
+  background-color: var(--xh-mid-gray);
+  color: var(--xh-white);
+  transition: ease .3s;
 }
 
 .icon-tabler {
