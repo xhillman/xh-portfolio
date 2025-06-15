@@ -1,7 +1,6 @@
-#content-container {
+/* #content-container {
   display: flex;
   align-items: center;
-  margin: 140px auto 40px auto;
   max-width: 80%;
 }
 
@@ -20,7 +19,7 @@
 .content h3 {
   font-size: 2rem;
   font-weight: 700;
-}
+} */
 
 ::view-transition {
   pointer-events: none;
