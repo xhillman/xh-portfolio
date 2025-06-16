@@ -21,6 +21,15 @@
   font-weight: 700;
 } */
 
+.content {
+  max-width: 85%;
+  /* margin: auto; */
+}
+
+.content h2 {
+  color: var(--xh-light-gray)
+}
+
 ::view-transition {
   pointer-events: none;
 }
