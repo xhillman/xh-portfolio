@@ -29,11 +29,11 @@ const activateCurrentMenuLink = () => {
 
 // social link hover animation
 const setSocialAnimations = () => {
-  const links = document.getElementsByClassName("icon-tabler");
+  const links = document.getElementsByClassName("social-icons");
   for (const link of links) {
     link.addEventListener("mouseenter", function () {
       this.attributes.stroke.value = "var(--xh-white)"
-      this.style.scale = "1.2"
+      this.style.scale = "1.1"
     })
     link.addEventListener("mouseleave", function () {
       this.attributes.stroke.value = "var(--xh-light-gray)"
