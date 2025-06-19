@@ -25,25 +25,10 @@ html {
     font-family: "Geist Mono", monospace;
 }
 
-h1 {
-  font-size: 6.854rem;
-}
 
-h2 {
-  font-size: 4.236rem;
-}
-
-h3 {
-  font-size: 2.618rem;
-}
-
-.subheading {
-  font-size: 1.618rem;
-}
-
-h1, h2, h3, .subheading {
+/* h1, h2, h3, .subheading {
   line-height: 1.2;
-}
+} */
 
 p {
   line-height: 1.6;
