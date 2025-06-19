@@ -1,0 +1,19 @@
+{
+    "socials": [
+        {
+            "socialName": "Github",
+            "socialIcon": "",
+            "socialURL": "https://github.com/xhillman"
+        },
+                {
+            "socialName": "LinkedIn",
+            "socialIcon": "",
+            "socialURL": "https://www.linkedin.com/in/xavierhillman/"
+        },
+                {
+            "socialName": "Email",
+            "socialIcon": "",
+            "socialURL": "mailto:xhillman13@gmail.com"
+        }
+    ]
+}

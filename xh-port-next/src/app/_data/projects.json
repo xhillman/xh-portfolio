@@ -1,0 +1,43 @@
+{
+    "projects": [
+        {
+            "projectName": "MagicGreens",
+            "projectLinkText": "magicgreens.netlify.app",
+            "projectURL": "https://magicgreens.netlify.app",
+            "projectIcon": "",
+            "projectDescription": "An e-commerce storefront for a hydroponics farm.",
+            "projectTech": [
+                "React.js",
+                "TypeScript",
+                "TailwindCSS",
+                "Redux"
+            ]
+        },
+        {
+            "projectName": "Tattoo Shops USA",
+            "projectLinkText": "tattooshopsusa.org",
+            "projectURL": "https://tattooshopsusa.org",
+            "projectIcon": "",
+            "projectDescription": "An e-commerce storefront for a hydroponics farm.",
+            "projectTech": [
+                "Next.js",
+                "TypeScript",
+                "TailwindCSS",
+                "SQLite"
+            ]
+        },
+        {
+            "projectName": "NFL SmartBets",
+            "projectLinkText": "magicgreens.netlify.app",
+            "projectURL": "https://magicgreens.netlify.app",
+            "projectIcon": "",
+            "projectDescription": "An e-commerce storefront for a hydroponics farm.",
+            "projectTech": [
+                "Next.js",
+                "TypeScript",
+                "TailwindCSS",
+                "Go"
+            ]
+        }
+    ]
+}
