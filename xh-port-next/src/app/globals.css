@@ -44,3 +44,93 @@ body {
   color: var(--foreground);
 
 }
+
+.tl-corner-bracket::before,
+.tr-corner-bracket::after,
+.bl-corner-bracket::before,
+.br-corner-bracket::after {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  content: "";
+}
+
+.tl-corner-bracket::before {
+  top: 0;
+  left: 0;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.tr-corner-bracket::after {
+  top: 0;
+  right: 0;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.bl-corner-bracket::before {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.br-corner-bracket::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.l-corner-brackets::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 100%;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-image: linear-gradient(to top, #f0f0f0 16px, #0a0a0a 16px, #0a0a0a 50%,#0a0a0a 50%, #0a0a0a calc(100% - 16px), #f0f0f0 16px) 5;
+}
+
+.r-corner-brackets::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  border-image: linear-gradient(to top, #f0f0f0 16px, #0a0a0a 16px, #0a0a0a 50%,#0a0a0a 50%, #0a0a0a calc(100% - 16px), #f0f0f0 16px) 5;
+}
+
+.t-corner-brackets::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 100%;
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-image: linear-gradient(to right, #f0f0f0 18px, #0a0a0a 18px, #0a0a0a 50%,#0a0a0a 50%, #0a0a0a calc(100% - 18px), #f0f0f0 18px) 5;
+}
+
+.b-corner-brackets::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  height: 16px;
+  width: 100%;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-image: linear-gradient(to right, #f0f0f0 18px, #0a0a0a 18px, #0a0a0a 50%,#0a0a0a 50%, #0a0a0a calc(100% - 18px), #f0f0f0 18px) 5;
+}
