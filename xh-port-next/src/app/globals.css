@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f0f0f0;
-  --foreground: #0a0a0a;
+  --background: #ebebeb;
+  --foreground: #151515;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #f0f0f0;
+    --background: #151515;
+    --foreground: #ebebeb;
   }
 }
 
@@ -83,30 +83,26 @@ body {
   border-right: 2px solid white;
 }
 
-.l-corner-brackets::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
+.l-corner-brackets::before,
+.r-corner-brackets::after {
   width: 16px;
   height: 100%;
+  top: 0;
+  content: "";
+  position: absolute;
   border-top-width: 2px;
   border-bottom-width: 2px;
-  border-left-width: 2px;
   border-image: linear-gradient(to top, #f0f0f0 16px, #0a0a0a 16px, #0a0a0a 50%,#0a0a0a 50%, #0a0a0a calc(100% - 16px), #f0f0f0 16px) 5;
 }
 
+.l-corner-brackets::before {
+  left: 0;
+  border-left-width: 2px;
+}
+
 .r-corner-brackets::after {
-  position: absolute;
-  content: "";
-  top: 0;
   right: 0;
-  width: 16px;
-  height: 100%;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
   border-right-width: 2px;
-  border-image: linear-gradient(to top, #f0f0f0 16px, #0a0a0a 16px, #0a0a0a 50%,#0a0a0a 50%, #0a0a0a calc(100% - 16px), #f0f0f0 16px) 5;
 }
 
 .t-corner-brackets::before {
