@@ -4,8 +4,9 @@ interface ProjectProps {
 
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <div className="project-card bg-[#171717] p-6 relative t-corner-brackets b-corner-brackets border-1 border-[#252525] max-w-[320px] min-h-[300px] lg:inline-block lg:max-w-full lg:w-full lg:min-h-0 lg:mb-8">
-      <h2 className="text-2xl font-bold">{project.projectName}</h2>
+    <div className="project-card relative perspective-near transition-transform ease-in-out p-2 relative t-corner-brackets b-corner-brackets max-w-[320px] lg:inline-block lg:max-w-full lg:w-full lg:min-h-0 lg:mb-8">
+      <div className="project-details p-3 bg-[#171717] min-h-[300px]">
+              <h2 className="text-2xl font-bold">{project.projectName}</h2>
       <p className="mb-4 lg:max-w-[90%]">{project.projectDescription}</p>
       <ul className="flex flex-wrap max-w-9/10">
         {
@@ -14,6 +15,8 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
           })
         }
       </ul>
+      </div>
+
     </div>
   );
 };

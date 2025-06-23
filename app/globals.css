@@ -4,7 +4,7 @@
   --background: #ebebeb;
   --foreground: #151515;
   --brackets: #333333;
-  --brackets-inner: #171717;
+  --brackets-inner: #151515;
 }
 
 @theme inline {
@@ -133,6 +133,6 @@ body {
   border-image: linear-gradient(to right, var(--brackets) 18px, var(--brackets-inner) 18px, var(--brackets-inner) 50%,var(--brackets-inner) 50%, var(--brackets-inner) calc(100% - 18px), var(--brackets) 18px) 5;
 }
 
-.project-card {
+/* .project-card {
   clip-path: polygon(100% 0, 100% 75%, 75% 100%, 0 100%, 0 0);
-}
+} */
