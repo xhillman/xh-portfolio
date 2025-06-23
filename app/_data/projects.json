@@ -38,6 +38,32 @@
                 "TailwindCSS",
                 "Go"
             ]
+        },
+                {
+            "projectName": "Test Project",
+            "projectLinkText": "magicgreens.netlify.app",
+            "projectURL": "https://magicgreens.netlify.app",
+            "projectIcon": "",
+            "projectDescription": "An app that predicts the outcome of NFL matchups based on machine learning.",
+            "projectTech": [
+                "Next.js",
+                "TypeScript",
+                "TailwindCSS",
+                "Go"
+            ]
+        },
+         {
+            "projectName": "Test Project 2",
+            "projectLinkText": "magicgreens.netlify.app",
+            "projectURL": "https://magicgreens.netlify.app",
+            "projectIcon": "",
+            "projectDescription": "An app that predicts the outcome of NFL matchups based on machine learning.",
+            "projectTech": [
+                "Next.js",
+                "TypeScript",
+                "TailwindCSS",
+                "Go"
+            ]
         }
     ]
 }
