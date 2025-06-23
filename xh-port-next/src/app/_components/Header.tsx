@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="box-border relative flex justify-between w-full p-4 sticky top-0 bg-[#1d1d1d] z-1">
-      <h2 className="relative text-3xl font-bold w-1/2">XAVIER HILLMAN</h2>
+    <header className="box-border flex justify-between p-4 bg-[#151515] sticky top-0 z-1">
+      <h2 className="relative text-2xl md:text-3xl font-bold max-w-1/2">Xavier Hillman</h2>
       {/* <Glyphs /> */}
       <nav className="">
-        <ul className="flex flex-col justify-around w-fit">
-          <li className="mb-4">
+        <ul className="flex flex-col h-full lg:flex-row justify-around lg:items-center">
+          <li className="mb-4 lg:mb-0 lg:mr-4">
             <Link href="/" className="flex hover:text-rose-500 hover:scale-105 hover:decoration-rose-500 hover:translate-x-1 hover:-translate-y-1">
               
                 Home<svg
@@ -27,7 +27,7 @@ export default function Header() {
               </svg>
             </Link>
           </li>
-          <li className="mb-4 ">
+          <li className="mb-4 lg:mb-0 lg:mr-4">
             <Link
               href="/projects"
               className="flex hover:text-rose-500 hover:scale-105 hover:decoration-rose-500 hover:translate-x-1 hover:-translate-y-1"

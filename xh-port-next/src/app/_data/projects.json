@@ -18,7 +18,7 @@
             "projectLinkText": "tattooshopsusa.org",
             "projectURL": "https://tattooshopsusa.org",
             "projectIcon": "",
-            "projectDescription": "An e-commerce storefront for a hydroponics farm.",
+            "projectDescription": "A directory of tattoo shops in the US.",
             "projectTech": [
                 "Next.js",
                 "TypeScript",
@@ -31,7 +31,7 @@
             "projectLinkText": "magicgreens.netlify.app",
             "projectURL": "https://magicgreens.netlify.app",
             "projectIcon": "",
-            "projectDescription": "An e-commerce storefront for a hydroponics farm.",
+            "projectDescription": "An app that predicts the outcome of NFL matchups based on machine learning.",
             "projectTech": [
                 "Next.js",
                 "TypeScript",

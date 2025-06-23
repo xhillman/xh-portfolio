@@ -3,6 +3,8 @@
 :root {
   --background: #ebebeb;
   --foreground: #151515;
+  --brackets: #333333;
+  --brackets-inner: #171717;
 }
 
 @theme inline {
@@ -22,7 +24,7 @@
 html {
   box-sizing: border-box;
   font-size: 18px;
-    font-family: "Geist Mono", monospace;
+    font-family: "DM Sans";
 }
 
 
@@ -58,29 +60,29 @@ body {
 .tl-corner-bracket::before {
   top: 0;
   left: 0;
-  border-top: 2px solid white;
-  border-left: 2px solid white;
+  border-top: 2px solid var(--brackets);
+  border-left: 2px solid var(--brackets);
 }
 
 .tr-corner-bracket::after {
   top: 0;
   right: 0;
-  border-top: 2px solid white;
-  border-right: 2px solid white;
+  border-top: 2px solid var(--brackets);
+  border-right: 2px solid var(--brackets);
 }
 
 .bl-corner-bracket::before {
   bottom: 0;
   left: 0;
-  border-bottom: 2px solid white;
-  border-left: 2px solid white;
+  border-bottom: 2px solid var(--brackets);
+  border-left: 2px solid var(--brackets);
 }
 
 .br-corner-bracket::after {
   bottom: 0;
   right: 0;
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
+  border-bottom: 2px solid var(--brackets);
+  border-right: 2px solid var(--brackets);
 }
 
 .l-corner-brackets::before,
@@ -92,7 +94,7 @@ body {
   position: absolute;
   border-top-width: 2px;
   border-bottom-width: 2px;
-  border-image: linear-gradient(to top, #f0f0f0 16px, #0a0a0a 16px, #0a0a0a 50%,#0a0a0a 50%, #0a0a0a calc(100% - 16px), #f0f0f0 16px) 5;
+  border-image: linear-gradient(to top, var(--brackets) 16px, var(--brackets-inner) 16px, var(--brackets-inner) 50%,var(--brackets-inner) 50%, var(--brackets-inner) calc(100% - 16px), var(--brackets) 16px) 5;
 }
 
 .l-corner-brackets::before {
@@ -115,7 +117,7 @@ body {
   border-top-width: 2px;
   border-left-width: 2px;
   border-right-width: 2px;
-  border-image: linear-gradient(to right, #f0f0f0 18px, #0a0a0a 18px, #0a0a0a 50%,#0a0a0a 50%, #0a0a0a calc(100% - 18px), #f0f0f0 18px) 5;
+  border-image: linear-gradient(to right, var(--brackets) 18px, var(--brackets-inner) 18px, var(--brackets-inner) 50%,var(--brackets-inner) 50%, var(--brackets-inner) calc(100% - 18px), var(--brackets) 18px) 5;
 }
 
 .b-corner-brackets::after {
@@ -128,5 +130,9 @@ body {
   border-bottom-width: 2px;
   border-left-width: 2px;
   border-right-width: 2px;
-  border-image: linear-gradient(to right, #f0f0f0 18px, #0a0a0a 18px, #0a0a0a 50%,#0a0a0a 50%, #0a0a0a calc(100% - 18px), #f0f0f0 18px) 5;
+  border-image: linear-gradient(to right, var(--brackets) 18px, var(--brackets-inner) 18px, var(--brackets-inner) 50%,var(--brackets-inner) 50%, var(--brackets-inner) calc(100% - 18px), var(--brackets) 18px) 5;
+}
+
+.project-card {
+  clip-path: polygon(100% 0, 100% 75%, 75% 100%, 0 100%, 0 0);
 }

@@ -11,7 +11,7 @@
 .project-card {
   width: calc(50% - 12px);
   min-width: 300px;
-  background-color: #0f0f0f;
+  background-color: #5d5d5d;
   border-radius: 10px;
   opacity: 1;
   transition: ease .3s;
