@@ -21,7 +21,7 @@ export default function Home() {
 
         <ul className="socials h-fit flex">
           <li>
-            <Link href="" className="text-sm md:text-base font-bold flex mr-2 ease-in-out duration-200 hover:text-rose-500 hover:scale-105 hover:translate-x-1 hover:-translate-y-1">GitHub <svg
+            <Link href="" className="text-sm md:text-base font-bold flex mr-2 ease-in-out duration-200 hover:text-rose-500 hover:scale-105 hover:translate-x-1 hover:-translate-y-1 underline decoration-2 underline-offset-3">GitHub <svg
                 className="feather feather-arrow-up-right"
                 fill="none"
                 height="24"
@@ -37,7 +37,7 @@ export default function Home() {
               </svg></Link>
           </li>
           <li>
-            <Link href="" className="text-sm md:text-base font-bold flex mr-2 ease-in-out duration-200 hover:text-rose-500 hover:scale-105 hover:translate-x-1 hover:-translate-y-1">LinkedIn<svg
+            <Link href="" className="text-sm md:text-base font-bold flex mr-2 ease-in-out duration-200 hover:text-rose-500 hover:scale-105 hover:translate-x-1 hover:-translate-y-1 underline decoration-2 underline-offset-3">LinkedIn<svg
                 className="feather feather-arrow-up-right"
                 fill="none"
                 height="24"
@@ -53,7 +53,7 @@ export default function Home() {
               </svg></Link>
           </li>
           <li>
-            <Link href="" className="text-sm md:text-base font-bold flex ease-in-out duration-200 hover:text-rose-500 hover:scale-105 hover:translate-x-1 hover:-translate-y-1">Email<svg
+            <Link href="" className="text-sm md:text-base font-bold flex ease-in-out duration-200 hover:text-rose-500 hover:scale-105 hover:translate-x-1 hover:-translate-y-1 underline decoration-2 underline-offset-3">Email<svg
                 className="feather feather-arrow-up-right"
                 fill="none"
                 height="24"
