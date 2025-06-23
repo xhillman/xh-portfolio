@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="box-border flex justify-between p-4 bg-[#151515] sticky top-0 z-1">
-      <h2 className="relative text-2xl md:text-3xl font-bold max-w-1/2">Xavier Hillman</h2>
+      <h2 className="relative md:text-3xl font-bold max-w-1/2">Xavier Hillman</h2>
       {/* <Glyphs /> */}
       <nav className="">
         <ul className="flex flex-col h-full lg:flex-row justify-around lg:items-center">
@@ -47,7 +47,11 @@ export default function Header() {
                 <polyline points="7 7 17 7 17 17" /></svg></span>
             </Link>
           </li>
-          <li className="flex hover:text-rose-500 hover:translate-x-1 hover:-translate-y-1">About&nbsp;<svg
+          <li className="">
+          <Link
+              href="/about"
+              className="flex hover:text-rose-500 hover:scale-105 hover:decoration-rose-500 hover:translate-x-1 hover:-translate-y-1"
+            >About<svg
                 className="feather feather-arrow-up-right"
                 fill="none"
                 height="24"
@@ -59,7 +63,8 @@ export default function Header() {
                 width="24"
                 xmlns="http://www.w3.org/2000/svg"
               ><line x1="7" x2="17" y1="17" y2="7" />
-                <polyline points="7 7 17 7 17 17" /></svg></li>
+                <polyline points="7 7 17 7 17 17" /></svg>
+            </Link></li>
         </ul>
       </nav>
     </header>
